@@ -2,8 +2,7 @@ MakerBot Unicorn G-Code Output for Inkscape
 ===========================================
 
 This is an Inkscape extension that allows you to save your Inkscape drawings as
-G-Code files suitable for plotting with the [MakerBot Unicorn Pen Plotter](http://store.makerbot.com/makerbot-unicorn-pen-plotter-kit.html).
-
+G-Code files suitable for plotting with Marlin Compatible systems.
 Author: [Marty McGuire](http://github.com/martymcguire)
 
 Website: [http://github.com/martymcguire/inkscape-unicorn](http://github.com/martymcguire/inkscape-unicorn)
@@ -31,8 +30,7 @@ Usage
 =====
 
 * Size and locate your image appropriately:
-	* The CupCake CNC build platform size is 100mm x 100mm.
-	* Setting units to **mm** in Inkscape makes it easy to size your drawing.
+	* build platform size is 3200pixels x 800pixels.
 	* The extension will automatically attempt to center everything.
 * Convert all text to paths:
 	* Select all text objects.
@@ -41,6 +39,8 @@ Usage
 	* **File | Save a Copy**.
 	* Select **MakerBot Unicorn G-Code (\*.gcode)**.
 	* Save your file.
+	* **Problem needs fixing** gcode contains the bad lines of "(polyline..." find and replace all lines "(poly" with ";(poly" to comment them I am unsure where in the code to fix this.
+	
 * Preview
 	* For OS X, [Pleasant3D](http://www.pleasantsoftware.com/developer/pleasant3d/index.shtml) is great for this.
 	* For other operating systems... I don't know!
