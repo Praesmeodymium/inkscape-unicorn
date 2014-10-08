@@ -3,9 +3,7 @@ MakerBot Unicorn G-Code Output for Inkscape
 
 This is an Inkscape extension that allows you to save your Inkscape drawings as
 G-Code files suitable for plotting with Marlin Compatible systems.
-Author: [Marty McGuire](http://github.com/martymcguire)
-
-Website: [http://github.com/martymcguire/inkscape-unicorn](http://github.com/martymcguire/inkscape-unicorn)
+Author: [Ian Hoff] With most of the heavy lifting by (http://github.com/martymcguire)
 
 Credits
 =======
@@ -29,6 +27,10 @@ Typical locations include:
 Usage
 =====
 
+Build a spherebot of some manner like http://www.thingiverse.com/thing:20398
+Base it on a microcontroller that you can load marlin on like the currently low cost arduina mega+ramps+pololu's (currently these really are cheaper than smaller controllers)
+Install marlin and set your steps to 3200 per mm this sets a 1:1 pixel to step ratio (before the math of spheres)
+
 * Size and locate your image appropriately:
 	* build platform size is 3200pixels x 800pixels.
 	* The extension will automatically attempt to center everything.
@@ -50,11 +52,3 @@ Usage
 	* Center your build platform.
 	* Click the **Build** button!
 
-TODOs
-=====
-
-* Rename `*PolyLine` stuff to `*Path` to be less misleading.
-* Formalize "home" to be a reasonable place to change pages/pens.
-* Parameterize smoothness for curve approximation.
-* Use native curve G-Codes instead of converting to paths?
-* Include example templates?
