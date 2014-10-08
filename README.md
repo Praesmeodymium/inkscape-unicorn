@@ -30,6 +30,7 @@ Usage
 Build a spherebot of some manner like http://www.thingiverse.com/thing:20398
 Base it on a microcontroller that you can load marlin on like the currently low cost arduina mega+ramps+pololu's (currently these really are cheaper than smaller controllers)
 Install marlin and set your steps to 3200 per mm this sets a 1:1 pixel to step ratio (before the math of spheres)
+X is the pen motor, Y is the sphere motor, and you will need to power the 5v for the servo, I used a 7805 voltage converter availible at radioshack for 2$
 
 * Size and locate your image appropriately:
 	* build platform size is 3200pixels x 800pixels.
